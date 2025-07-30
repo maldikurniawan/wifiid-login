@@ -1,7 +1,7 @@
+import { NotFound } from "@/components";
+import { LoginPage } from "@/pages";
 import { Fragment } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import NotFound from "./components/NotFound";
-import LoginPage from "./pages/LoginPage";
 
 const App = () => {
   return (
