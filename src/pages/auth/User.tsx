@@ -34,7 +34,7 @@ const User = () => {
 
     return (
         <div>
-            <div className="text-primary font-bold border-b-2 pb-2">User Login</div>
+            <div className="text-primary font-black text-xl">User Login</div>
             <form onSubmit={formik.handleSubmit} className="space-y-4 pt-4">
                 <TextField
                     label="Username"
@@ -58,23 +58,26 @@ const User = () => {
                         placeholder="Password"
                         variant="outline"
                         rounded="xl"
+                        suffix={
+                            <div
+                                className="cursor-pointer"
+                                onClick={() => setIsShow(!isShow)}
+                            >
+                                {isShow ? <TbEyeOff size={24} /> : <TbEye size={24} />}
+                            </div>
+                        }
                         value={formik.values.password}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         error={formik.touched.password && formik.errors.password}
                     />
-                    <div
-                        className="absolute top-2 right-2 cursor-pointer"
-                        onClick={() => setIsShow(!isShow)}
-                    >
-                        {isShow ? <TbEyeOff size={24} /> : <TbEye size={24} />}
-                    </div>
+
                 </div>
                 <Button
                     type="submit"
                     disabled={loading}
                     textcolor="white"
-                    className="w-full"
+                    className="w-full cursor-pointer shadow!"
                     rounded="xl"
                 >
                     {loading ? (
