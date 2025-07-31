@@ -10,6 +10,7 @@ type VoucherCardProps = {
     duration: string;
     speed: string;
     price: any;
+    buy?: boolean;
 };
 
 const VoucherCard: React.FC<VoucherCardProps> = ({
@@ -20,6 +21,7 @@ const VoucherCard: React.FC<VoucherCardProps> = ({
     duration,
     speed,
     price,
+    buy = true,
 }) => {
     return (
         <StyledWrapper>
@@ -58,7 +60,9 @@ const VoucherCard: React.FC<VoucherCardProps> = ({
                         <p className="font-bold text-primary">
                             {new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR", maximumFractionDigits: 0 }).format(price)}
                         </p>
-                        <Button rounded='lg' size="sm" textcolor='white' className='cursor-pointer shadow!'>Beli</Button>
+                        {buy && (
+                            <Button rounded='lg' size="sm" textcolor='white' className='cursor-pointer shadow!'>Beli</Button>
+                        )}
                     </div>
                 </div>
             </div>

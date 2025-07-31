@@ -121,8 +121,8 @@ const TextField: React.FC<TextFieldProps> = ({
                     : isFocus
                         ? textFieldColor
                         : isHover
-                            ? "#9A9C9A"
-                            : "#BABCBA",
+                            ? "#E4E4E7"
+                            : "#E4E4E7",
             borderWidth: 1,
             borderStyle: "solid",
             outline: error
@@ -173,8 +173,8 @@ const TextField: React.FC<TextFieldProps> = ({
                     : isFocus
                         ? textFieldColor
                         : isHover
-                            ? "#9A9C9A"
-                            : "#BABCBA",
+                            ? "#E4E4E7"
+                            : "#E4E4E7",
             borderWidth: 1,
             borderStyle: "solid",
             outline: "none",
@@ -210,7 +210,7 @@ const TextField: React.FC<TextFieldProps> = ({
             left: 14,
             top: isFocus || value ? 0 : "50%",
             transform: "translateY(-50%)",
-            color: isFocus || value ? textFieldColor : "",
+            color: isFocus || value ? textFieldColor : "#BABCBA80",
         };
     } else if (variant === "filled") {
         labelStyle = {
@@ -270,7 +270,7 @@ const TextField: React.FC<TextFieldProps> = ({
                             style={{ ...labelStyle }}
                             className={`absolute pointer-events-none transition-[top,font,padding,margin] leading-none whitespace-nowrap ${(isFocus && variant === "outline") ||
                                 (variant === "outline" && value)
-                                ? "bg-white/80 backdrop-blur px-1 -ml-1"
+                                ? "bg-white/80 backdrop-blur rounded px-1 -ml-1"
                                 : ""
                                 }`}
                         >
@@ -283,7 +283,7 @@ const TextField: React.FC<TextFieldProps> = ({
                             style={{
                                 fontSize: textFieldSize,
                             }}
-                            className="flex items-center px-2"
+                            className="flex items-center px-2 bg-gray-100 rounded-l-xl"
                         >
                             {prefix}
                         </div>

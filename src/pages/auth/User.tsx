@@ -35,7 +35,7 @@ const User = () => {
     return (
         <div>
             <div className="text-primary font-black text-xl">User Login</div>
-            <form onSubmit={formik.handleSubmit} className="space-y-4 pt-4">
+            <form onSubmit={formik.handleSubmit} className="space-y-4 pt-4 text-[#4a5565]">
                 <TextField
                     label="Username"
                     id="username"

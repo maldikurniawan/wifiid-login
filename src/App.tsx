@@ -1,5 +1,5 @@
 import { NotFound } from "@/components";
-import { LoginPage } from "@/pages";
+import { BeliVoucher, LoginPage } from "@/pages";
 import { Fragment } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -9,6 +9,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LoginPage />} />
+          <Route path="/beli-voucher" element={<BeliVoucher />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
