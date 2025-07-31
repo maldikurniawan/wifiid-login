@@ -39,12 +39,12 @@ const Button: React.FC<ButtonProps> = ({
 
     // Color mapping
     const btnColors: Record<string, string> = {
-        primary: "#DB2777",
+        primary: "#3D74B6",
         base: "#F3F4F6",
         success: "#16A34A",
         warning: "#FACC15",
         danger: "#DC2626",
-        info: "#2563EB",
+        info: "#3D74B6",
     };
 
     const btnColor = btnColors[color] || color;

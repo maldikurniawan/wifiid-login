@@ -63,7 +63,7 @@ const User = () => {
                                 className="cursor-pointer"
                                 onClick={() => setIsShow(!isShow)}
                             >
-                                {isShow ? <TbEyeOff size={24} /> : <TbEye size={24} />}
+                                {isShow ? <TbEyeOff size={24} className="text-[#E4E4E7]"/> : <TbEye size={24} className="text-[#E4E4E7]"/>}
                             </div>
                         }
                         value={formik.values.password}

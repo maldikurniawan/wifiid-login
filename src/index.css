@@ -3,12 +3,12 @@
 
 @theme {
     --font-poppins: "Poppins";
-    --color-primary: #DB2777;
+    --color-primary: #3D74B6;
     --color-base: #F3F4F6;
     --color-success: #16A34A;
     --color-warning: #FACC15;
     --color-danger: #DC2626;
-    --color-info: #2563EB;
+    --color-info: #3D74B6;
 }
 
 /* Hide Autofill Background */

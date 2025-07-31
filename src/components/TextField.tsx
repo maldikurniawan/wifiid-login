@@ -71,12 +71,12 @@ const TextField: React.FC<TextFieldProps> = ({
     // Color
     const textFieldColor =
         {
-            primary: "#DB2777",
+            primary: "#3D74B6",
             base: "#F3F4F6",
             success: "#16A34A",
             warning: "#FACC15",
             danger: "#DC2626",
-            info: "#2563EB",
+            info: "#3D74B6",
         }[color] || color;
 
     // Size

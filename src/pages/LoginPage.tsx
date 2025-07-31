@@ -6,7 +6,7 @@ const LoginPage = () => {
     return (
         <div className="min-h-screen py-3">
             <Header />
-            <div className="flex xl:flex-row flex-col-reverse gap-4 justify-between mt-[75px] px-4 xl:px-40 ">
+            <div className="flex xl:flex-row flex-col-reverse gap-4 justify-between mt-[75px] px-4 md:px-40 ">
                 <div className="w-full xl:w-[65%] p-4 bg-white">
                     <p className="font-black text-primary text-xl mb-4">Voucher List</p>
                     <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">

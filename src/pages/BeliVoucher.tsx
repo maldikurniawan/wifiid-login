@@ -21,13 +21,13 @@ const BeliVoucher = () => {
     return (
         <div className="min-h-screen py-3">
             <Header />
-            <div className="flex xl:flex-row flex-col p-4 gap-4 justify-between mt-[75px] px-8 xl:px-44">
+            <div className="flex xl:flex-row flex-col p-4 gap-4 justify-between mt-[75px] px-8 md:px-44">
                 <div className="w-full xl:w-[40%]">
                     <Card>
                         <p className="font-black text-primary">Cara Pembelian Voucher</p>
                         <hr className="border border-gray-100 my-2" />
                         <div className="text-sm text-gray-600 font-medium">
-                            <div>1. Pilih Nominal Voucher yang kamu inginkan</div>
+                            <div>1. Isi Email & No. WhatsApp kamu</div>
                             <div>2. Selesaikan pembayaran</div>
                             <div>3. Kode voucher akan segera kamu dapatkan</div>
                         </div>
@@ -64,7 +64,7 @@ const BeliVoucher = () => {
                                     onBlur={formik.handleBlur}
                                     error={formik.touched.email && formik.errors.email}
                                 />
-                                <div className="font-black text-primary my-2">3. No. WhatsApp</div>
+                                <div className="font-black text-primary mb-2 mt-8">3. No. WhatsApp</div>
                                 <TextField
                                     prefix="+62"
                                     id="no_hp"
